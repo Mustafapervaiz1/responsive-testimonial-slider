@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Testimonial slider html css javascript</title>
+  </head>
+  <body>
+    <div class="fullcon">
+      <div class="main"><h1>TOP 15 NGOs in Pakistan</h1></div>
+      <!-- start from here  -->
+      <div class="slide-container">
+        <div class="slide fade">
+          <h3>No 1 : SAYLANI WELFARE TRUST</h3>
+          <br />
+          <img
+            src="https://saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png"
+            class="img1"
+          />
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saylani
+            Trust has been operational since 1999; since then, the organization
+            has provided relief to thousands of people through its services. The
+            trust has an active dastarkhwan campaign as well as an RO plant
+            installation campaign to provide the most basic necessity to the
+            needy. Their education services provide education facilities to
+            180,000 students annually.
+          </p>
+
+          <br />
+          <h5>Adress : Head Office: Grappetite Chowrangi, Bahadurabad.</h5>
+          <br />
+          <h6>Contact: (021) 111 729 526</h6>
+        </div>
+        <div class="slide fade">
+          <h3>No 2 : EDHI FOUNDATION</h3>
+          <br />
+          <img
+            src="https://i0.wp.com/www.transparenthands.org/wp-content/uploads/2017/10/Edhi-Foundation-A-Non-Profit-welfare-Organization.jpg?fit=580%2C323&ssl=1"
+            class="img1"
+          />
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The
+            Edhi Foundation is a non-profit social welfare organization based in
+            Pakistan. It was founded by Abdul Sattar Edhi in 1951, who served as
+            the head of the organization until his death on 8 July 2016. Bilquis
+            Edhi, a nurse by profession, used to oversee the maternity and
+            adoption services of the foundation.
+          </p>
+
+          <br />
+          <h5>
+            Adress : Head Office:Sarafa Bazar, Boulton Market,Mithadar,
+            Karachi..
+          </h5>
+          <br />
+          <h6>Contact: +92 (21) 32413232</h6>
+        </div>
+        <div class="slide fade">
+          <h3>No 3 : AKHUWAT FOUNDATION.</h3>
+          <br />
+          <img src="./akhuwat.jpg" class="img1" />
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AKHUWAT
+            FOUNDATION has been operational since 1999; since then, the
+            organization has provided relief to thousands of people through its
+            services. The trust has an active dastarkhwan campaign as well as an
+            RO plant installation campaign to provide the most basic necessity
+            to the needy. Their education services provide education facilities
+            to students annually.
+          </p>
+
+          <br />
+          <h5>
+            Address: 19 Civic Center, Sector A2, Township, Lahore, Pakistan
+          </h5>
+          <br />
+          <h6>Contact: 042–111-448-464</h6>
+        </div>
+        <div class="slide fade">
+          <h3>No 4: DAR-UL-SUKUN</h3>
+          <br />
+          <img src="./download.jpg" class="img1" />
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dar-ul-Sukun
+            originated as a home for the abandoned children with disabilities.
+            It was founded on 17th February 1969 by a Dutch nun, Sr. Gertrude
+            Lemmens who came to Pakistan as a visitor in her full youth. She was
+            so much touched by the pathetic condition of children with
+            disabilities, who were found on street corners and rescued from the
+            garbage dump in city. In Pakistan, she devoted her life for the care
+            police and relatives. Her selfless love and affection turned it into
+            a glaring reality, Dar ul Sukun came into being.
+          </p>
+
+          <br />
+          <h5>
+            Adress : Head Office: 159/H/3 Kashmir Road, PECHS Karachi, Pakistan.
+          </h5>
+          <br />
+          <h6>Contact: +92 337 7778586</h6>
+        </div>
+        <div class="slide fade">
+          <h3>No 5 : Ansar Burney Trust</h3>
+          <br />
+          <img src="./burnidownload.png" class="img1" />
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mr.
+            Ansar Burney Chairman of ABTI developed the concept of having a
+            Trust to safeguard the rights of prisoners while he was himself
+            being transferred into different jails of Pakistan. Mr. Ansar
+            Burney’s was a prominent student leader with People’s Student
+            Federation. It was during these times (at age 20) that he was
+            arrested to give pro-democracy speech against Martial Law. He was
+            jailed thrice from 1978 to 1980 and for different durations under
+            false allegations (as a Student Leader).
+          </p>
+
+          <br />
+          <h5>Adress : 6-Hassan Manzil, Arambagh Road, Karachi, Pakistan.</h5>
+          <br />
+          <h6>Contact:92 21 34120146 / 47</h6>
+        </div>
+      </div>
+
+      <!-- end from here  -->
+      <div class="btnmain">
+        <button class="left btn" onclick="prevSlide(-1)">
+          <i class="fa-solid fa-circle-left"></i>
+        </button>
+        <button class="right btn" onclick="nextSlide(1)">
+          <i class="fa-solid fa-circle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- <script src="mob.js"></script> -->
+    <script>
+      const slider = document.querySelectorAll(".slide");
+      let slideIndex = 1;
+      showSlide(slideIndex);
+
+      function showSlide(index) {
+
+        if(index < 1){
+          slideIndex = slider.length;
+         }
+
+         if(index > slider.length){
+           slideIndex = 1
+         }
+
+          for (i = 0; i < slider.length; i++) {
+            slider[i].style.display = "none";
+          }
+        
+          slider[slideIndex - 1].style.display = "block";
+
+      }
+
+      function nextSlide(n) {
+        slideIndex = slideIndex + n;
+        showSlide(slideIndex);
+      }
+
+      function prevSlide(n) {
+        slideIndex = slideIndex + n;
+        showSlide(slideIndex);
+      }
+
+    </script>
+  </body>
+</html>
