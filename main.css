@@ -3,6 +3,9 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background: #344e52;
+}
 
  
 
@@ -15,9 +18,7 @@
     background: linear-gradient(90deg, rgb(233, 164, 245) 0%, rgba(29,253,247,1) 50%, rgb(204, 201, 219) 100%);
     margin: auto;
     margin-top: 90px; 
-     /* display:grid;
-  justify-content: center;
-  align-items: center;     */
+     
 } 
 .main{
      padding: 20px;
@@ -30,7 +31,7 @@
 .slide{
     border-radius: 40px;
     border: 4px solid rgb(0, 0, 0);
-    /* background-color: rgb(211, 228, 13); */
+    
     background-color: hwb(107 56% 15%);
 height: 350px;
 width: 45rem;

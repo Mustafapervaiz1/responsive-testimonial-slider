@@ -20,9 +20,3 @@ function prevSlide(n){
 
 
 showSlide(slideIndex)
-// console.log(slider);
-
-// slider.forEach((slide,index)=>
-// {
-//     slide.style.left=`${index * 100}%`
-// })
